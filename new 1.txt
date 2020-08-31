@@ -1,0 +1,108 @@
+<div class="booking-form">
+			
+   
+                        <h3>Place Your Order</h3>
+						 <script type="text/javascript">var submitted=false;</script>
+    
+    
+						<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"      
+						onload="if(submitted) {window.location='https://bit.ly/honourcreators';}"></iframe> 
+						
+                        <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfyie-hLZxTlLfaeKr5uw1YPuLPaii3bnWwMRPVZ0SdopULTg/formResponse" method="post" target="hidden_iframe" onsubmit="return validateForm(); ">
+                            <div class="check-date">
+                                <label for="Name">Your Name:</label>
+                                <input type="text" class="Name" id="Name" required class="single-input" required name="entry.625208708">
+                               
+                            </div>
+                            <div class="check-date">
+                                <label for="Email">Email Id</label>
+                                <input type="email" class="Email" id="Email" required class="single-input" required name="entry.921009159">
+                                
+                            </div>
+							<div class="check-date">
+                                <label for="Number">Contact Number</label>
+                                 <input type="text" id="phone" required name="entry.1863342674">
+                               
+                            </div>
+                            <div class="select-option">
+                                <label for="guest">Choose Your Budget</label>
+                                <select id="guest" required name="entry.1344542595">
+								<option value="">Select Here</option>
+                                    <option value="₹999 - ₹1999">₹999 - ₹1999</option>
+									<option value="₹2000 - ₹3000">₹2000 - ₹3000</option>
+									<option value="₹3000 - ₹4000">₹3000 - ₹4000</option>
+									                           
+                                </select>
+                            </div>
+                            
+                 <button type="submit" >Place Order</button>
+				 
+                        </form>
+						<script type="text/javascript">
+    function validateName() {
+            var name = document.getElementById('name').value;
+            if(name.length == 0) {
+              alert("Name can't be blank") ;
+              return false;
+
+            }
+            if (!name.match(/^[a-zA-Z]{3,}(?: [a-zA-Z]+){0,2}$/)) {
+              alert("Please enter your correct name") ;//Validation Message
+              return false;
+            }
+            return true;
+          }
+
+          function validatePhone() {
+            var phone = document.getElementById('phone').value;
+            if(phone.length == 0) {
+              alert("Phone number can't be blank") ;//Validation Message
+              return false;
+            }
+
+            if(!phone.match(/^[0]?[789]\d{9}$/)) {
+             alert("Please enter a correct phone number") ;//Validation Message
+             return false;
+           }
+
+           return true;
+
+         }
+
+         function validateEmail () {
+
+          var email = document.getElementById('email').value;
+          if(email.length == 0) {
+            alert("Email can't be blank") ;//Validation Message
+            return false;
+
+          }
+
+          if(!email.match(/^[A-Za-z\._\-[0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)) {
+            alert("Please enter a correct email address") ;//Validation Message
+            return false;
+
+          }
+
+          return true;
+
+        }
+
+
+        function validateForm() {
+          if (!validateName() || !validatePhone() || !validateEmail()) {
+
+            alert("Form not submitted");//Validation Message
+            return false;
+          }
+          else {
+            submitted=true;
+			
+            return true;
+			
+          }
+
+        }
+
+        </script>
+                    </div>

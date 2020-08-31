@@ -1,0 +1,224 @@
+	<!DOCTYPE html>
+	<html lang="eng" class="no-js">
+	<head>
+	<style>
+	body { background-color: black;
+	}
+	</style>
+		<!-- Mobile Specific Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<!-- Favicon-->
+	
+		<!-- Author Meta -->
+		<meta name="author" content="codepixer">
+		<!-- Meta Description -->
+		<meta name="description" content="">
+		<!-- Meta Keyword -->
+		<meta name="keywords" content="">
+		<!-- meta character set -->
+		<meta charset="UTF-8">
+		<!-- Site Title -->
+		<title>App Development</title>
+
+		<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet"> 
+			<!--
+			CSS
+			============================================= -->
+			<link rel="stylesheet" href="css/linearicons.css">
+			<link rel="stylesheet" href="css/font-awesome.min.css">
+			<link rel="stylesheet" href="css/bootstrap.css">
+			<link rel="stylesheet" href="css/magnific-popup.css">
+			<link rel="stylesheet" href="css/nice-select.css">					
+			<link rel="stylesheet" href="css/animate.min.css">
+			<link rel="stylesheet" href="css/owl.carousel.css">
+			<link rel="stylesheet" href="css/main.css">
+		</head>
+		
+	<body onload="ramesh()">
+
+	<div id = "runacircle"></div>
+
+			  <header id="header" id="home">
+			    <div class="container">
+			    	<div class="row align-items-center justify-content-between d-flex">
+				      <div id="logo">
+				      <img src="img/logo.png" alt="" title="" />
+				      </div>
+				      		    		
+			    	</div>
+			    </div>
+			  </header><!-- #header -->
+
+
+			<!-- start banner Area -->
+			<section class="banner-area" id="home">	
+				
+			</section>
+			<!-- End banner Area -->	
+		
+
+			<!-- Start unique-feature Area -->
+			<section class="unique-feature-area section-gap" id="unique">
+				<div class="container">
+										
+					<div class="row">
+						<div class="col-lg-3 col-md-6">
+						<br>
+<br>
+							<div class="single-unique-product">
+								<img class="img-fluid" src="https://honourcreators.com/images/app_by_honourcreators.svg" alt="">
+								<div class="desc">Why Need
+									<h4>
+										<u>Application</u>
+									</h4>
+									<br>
+									<p>Mobile apps are at a point where they are pretty much synonymous with “marketing on steroids” because of the huge customer potential they are able to tap into. Marketing through a mobile app can boost your business to a whole new level.The smartphone is the number one means of communication. People spend more time with their smartphone than with their partner, family or relatives. Facebook, Twitter, WhatsApp, Angry Birds, Candy Crush: smartphone screens are used more often than any other medium. This means apps should be an integral part of your communication mix.</p>
+
+								</div>
+							</div>
+						</div>
+												
+					</div>
+				</div>	
+			</section>
+			<!-- End unique-feature Area -->
+
+			<div class="booking-form">
+                        <h3>Place Your Order </h3>
+						 <script type="text/javascript">var submitted=false;</script>
+    
+    
+						<iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"      
+						onload="if(submitted) {window.location='congo.html';}"> </iframe> 
+						
+                        <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfCYtjZDnlmINt3iwLzuOVbM11ow6QgajjoOoJxC4HzSUFVhg/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true"s stye="max-width:400px;margin:auto;margin-top:100px">
+                            <div class="check-date">
+                                <label for="Name">Your Name:</label>
+                                <input type="text" class="Name" id="Name" required class="single-input" required name="entry.1363298538">
+                               
+                            </div>
+                            <div class="check-date">
+                                <label for="Email">Email Id</label>
+                                <input type="email" class="Email" id="Email" required class="single-input" required name="entry.792272700">
+                                
+                            </div>
+							<div class="check-date">
+                                <label for="Number">Contact Number</label>
+                                 <input type="text"  id="phone" pattern="\d{10}" required name="entry.398944910">
+                               
+                            </div>
+                            <div class="select-option">
+                                <label for="guest">Choose Your Budget</label>
+                                <select id="inputState" class="form-control" required name="entry.974910367">
+<option value="">Select Here</option>
+<option value="₹4,999">₹4,999</option>
+<option value="₹9,999 - ₹19,999">₹9,999 - ₹19,999</option>
+<option value="₹19,999 - ₹29,999">₹19,999 - ₹29,999</option>
+<option value="Customize Budget">Customize Budget</option>
+</select>
+		  </div>
+		   <small id="emailHelp" class="form-text text-muted">Selection of <b>"Customize Budget"</b> means, You will offer your budget, we will deliver
+              our best product acccording to your affordability..</small>
+       
+                            
+                 <button type="submit" >Send Your Request</button>
+				 
+                        </form>
+						<script type="text/javascript">
+    function validateName() {
+            var name = document.getElementById('name').value;
+            if(name.length == 0) {
+              alert("Name can't be blank") ;
+              return false;
+
+            }
+            if (!name.match(/^[a-zA-Z]{3,}(?: [a-zA-Z]+){0,2}$/)) {
+              alert("Please enter your correct name") ;//Validation Message
+              return false;
+            }
+            return true;
+          }
+
+          function validatePhone() {
+            var phone = document.getElementById('phone').value;
+            if(phone.length == 0) {
+              alert("Phone number can't be blank") ;//Validation Message
+              return false;
+            }
+
+            if(!phone.match(/^[0]?[789]\d{9}$/)) {
+             alert("Please enter a correct phone number") ;//Validation Message
+             return false;
+           }
+
+           return true;
+
+         }
+
+         function validateEmail () {
+
+          var email = document.getElementById('email').value;
+          if(email.length == 0) {
+            alert("Email can't be blank") ;//Validation Message
+            return false;
+
+          }
+
+          if(!email.match(/^[A-Za-z\._\-[0-9]*[@][A-Za-z]*[\.][a-z]{2,4}$/)) {
+            alert("Please enter a correct email address") ;//Validation Message
+            return false;
+
+          }
+
+          return true;
+
+        }
+
+
+        function validateForm() {
+          if (!validateName() || !validatePhone() || !validateEmail()) {
+
+            alert("Form not submitted");//Validation Message
+            return false;
+          }
+          else {
+            submitted=true;
+			
+            return true;
+			
+          }
+
+        }
+
+        </script>
+                    </div>
+<br><center><div class="single-footer-widget"><p class="footer-text">With <i class="fa fa-heart-o" aria-hidden="true"></i> Team <b>HonourCreators</b></p>		
+<img class="img-fluid" src="honour.gif" alt=""><br><br></div></center>
+			
+		<script>
+		var preloader = document.getElementById('runacircle');
+		
+		function ramesh(){
+		
+			preloader.style.display='none';
+		}
+		
+		</script>
+			
+			<script src="js/vendor/jquery-2.2.4.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+			<script src="js/vendor/bootstrap.min.js"></script>			
+
+  			<script src="js/easing.min.js"></script>			
+			<script src="js/hoverIntent.js"></script>
+			<script src="js/superfish.min.js"></script>	
+			<script src="js/jquery.ajaxchimp.min.js"></script>
+			<script src="js/jquery.magnific-popup.min.js"></script>	
+			<script src="js/owl.carousel.min.js"></script>			
+			<script src="js/jquery.sticky.js"></script>
+			<script src="js/jquery.nice-select.min.js"></script>			
+			<script src="js/parallax.min.js"></script>	
+			<script src="js/mail-script.js"></script>				
+			<script src="js/main.js"></script>	
+		</body>
+	</html>
